@@ -1,0 +1,190 @@
+/* Reset sederhana */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container utama */
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f8ff; /* Warna biru muda yang lebih lembut */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6); /* Gradien biru yang lebih dalam */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 3px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar-header h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar-menu ul {
+  list-style: none;
+}
+
+.sidebar-menu ul li {
+  margin-bottom: 1.2rem;
+}
+
+.sidebar-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-menu ul li a:hover,
+.sidebar-menu ul li a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 30px 40px;
+  overflow-y: auto;
+}
+
+/* Header di main content */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header h2 {
+  color: #1e3a8a; /* Warna biru tua */
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 600;
+  color: #555;
+}
+
+.user-menu img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #1e3a8a; /* Warna biru tua */
+}
+
+/* Card */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(30, 58, 138, 0.1); /* Bayangan dengan warna biru */
+  padding: 20px 30px;
+  margin-bottom: 25px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #1e3a8a; /* Warna biru tua */
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.card-header a {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1e3a8a; /* Warna biru tua */
+  text-decoration: none;
+  border: 1.5px solid #1e3a8a; /* Warna biru tua */
+  padding: 4px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.card-header a:hover {
+  background-color: #1e3a8a; /* Warna biru tua */
+  color: white;
+}
+
+/* Statistik card kecil */
+.card > div.card {
+  box-shadow: none;
+  padding: 15px 20px;
+  text-align: center;
+  background: #e6f0ff; /* Warna biru muda */
+  border-radius: 10px;
+  color: #1e3a8a; /* Warna biru tua */
+  font-weight: 700;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.card > div.card h4 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #1e3a8a; /* Warna biru tua */
+}
+
+.card > div.card p {
+  font-size: 2rem;
+  color: #1e3a8a; /* Warna biru tua */
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.table thead tr {
+  background-color: #1e3a8a; /* Warna biru tua */
+  color: white;
+  font-weight: 700;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table tbody tr:hover {
+  background-color: #f0f7ff; /* Warna biru muda */
+  cursor: default;
+}
+
+.sidebar-menu ul li a.active {
+  background-color: rgba(255, 255, 255, 0.35);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.5);
+}
+
